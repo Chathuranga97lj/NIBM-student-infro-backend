@@ -10,7 +10,11 @@ function authJwt() {
     }).unless({
         path: [
             `${api}/user/login`,
-            `${api}/user/register`
+            `${api}/user/register`,
+            `${api}/student/add`,
+            `${api}/student/get`,
+            `${api}/student/update/:id`,
+            `${api}/student/delete/:id`,
         ]
     });
 }

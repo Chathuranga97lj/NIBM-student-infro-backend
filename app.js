@@ -22,10 +22,12 @@ const api = process.env.API_URL;
 
 // import routes
 const userRouter = require('./routes/users');
+const studentRouter = require('./routes/students');
 
 
 // set api routers
 app.use(`${api}/user`, userRouter);
+app.use(`${api}/student`, studentRouter);
 
 
 // connect db
